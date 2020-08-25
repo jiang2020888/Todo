@@ -8,24 +8,11 @@
         <link rel="stylesheet" href="todo1.css">
     </head>
     <body>
-        <html ng-app>
-        <head>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-            <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
-            <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
-        </head>
-        <body>
         <div class="todo-wrapper" ng-controller="TodoCtrl">
             <div class="todo-form">
                 <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" ng-model-instant />
                 <button class="add-btn" ng-click="addTodo()"><h2>Add</h2></button>
             </div>
-            <ul>
-                <li ng-repeat="todo in todos">
-                    <input type="checkbox" ng-model="todo.done"/>
-                    <span class="done-{{todo.done}}">{{todo.text}}</span>
-                </li>
-            </ul>
           <div id="id-div-container">
               <div class="todo-cell">
                   <button class="todo-done">完成</button>
@@ -33,12 +20,8 @@
                   <span>后弦</span>
               </div>
           </div>
-
             <button class="clear-btn" ng-click="clearCompleted()">Clear completed</button>
         </div>
-        </body>
-
-        </html>
       <script src="todo.js"></script>
     </body>
 </html>
